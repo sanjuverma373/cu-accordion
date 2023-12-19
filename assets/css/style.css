@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    transition: .4s;
+}
+
+.accordion-crd {
+    padding: 24px 21px;
+    border-radius: 20px;
+    background: var(--white, #FFF);
+    box-shadow: 0px 11px 44px -10px rgba(0, 0, 0, 0.25);
+    max-width: 310px;
+}
+
+.accordion-h {
+    color: #808080;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.accordion-box {
+    width: 498px;    
+    border-radius: 5px;
+    border: 1px solid var(--border, rgba(0, 0, 0, 0.10));
+    padding: 20px;
+    cursor: pointer; 
+    max-width: 270px; 
+}
+
+.hading-c {
+    color: var(--gray, #808080);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.para {
+    color: #808080;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: none;
+}
+
+.active {
+    border: 1px solid #128DFF;
+   
+}
+
+.active .para {
+    display: block;
+}
+
+.accordion-box .active div div .para .hading-c{
+    color: black;
+}
+
+ .active .hading-c {
+    color: black;
+} 
+
+.active svg {
+    transform: rotate(180deg);
+}
+
+@media (min-width:767.8px) {
+     .accordion-crd{
+        max-width: 400px;
+     }   
+     .accordion-box{
+        max-width: 340px;
+     } 
+}
